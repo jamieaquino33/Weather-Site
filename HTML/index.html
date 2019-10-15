@@ -1,5 +1,5 @@
 
-<!DOCTYPE html>'
+<!DOCTYPE html>
 
 <html lang="en">
 
@@ -11,20 +11,49 @@
         <title>Weather Vane</title>
 
         <!--Link to bootstrap -->
-        <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"             integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <!-- Link to CSS -->
         <link rel="stylesheet" href="../CSS/main.css">
     </head>
 
     <body>
-
+            <nav class="navbar navbar-expand-lg navbar-light" style="background-color: cadetblue;">
+                    <a class="navbar-brand" href="#">Weather Vane</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                  
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                          <a class="nav-link" href="https://darksky.net/forecast/37.8267,-122.4233" target="_blank">Powered by Dark Sky <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="http://developer.mapquest.com/documentation/geocoding-api" target="_blank">MapQuest Geocoding</a>
+                        </div>
+                        <form class="form-inline my-2 my-lg-0">
+                                <input class="form-control mr-sm-2" type="search" placeholder="Enter Zip/Address/City" aria-label="Search">
+                                <button type="button" class="btn btn-secondary">Get Weather</button>
+                              </form>
+                  </nav>
 
         <!-- Link jQuery, Popper.js, and the Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="../bootstrap/js/bootstrap.js"></script>
+        
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+        <!-- API Keys File -->
+        <script 
+            src="../JS/apiKeys.js"></script>
         <!-- Link to JS -->
-        <script type="text/javascript" src="../JS/scripts.js"></script>
+    <script type="text/javascript" src="../JS/scripts.js"></script>
     </body>
 
 
