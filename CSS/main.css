@@ -33,3 +33,7 @@ h1 {
     border: 2px solid white;
     background-color: silver;
 }
+
+#changeColor {
+    color: orange;
+}

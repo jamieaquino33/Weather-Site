@@ -38,29 +38,44 @@
                   </nav>
             <!--End Nav Bar -->
 
-            <!-- Weather Card -->
+            <!-- Weather Card Container -->
             <div class="container">
                 <div class="row">
-                    <div id="template">
-                        <div class="weatherCard" class="col-xs-12 col-lg-4">
+                </div>
+            </div>
+                    <!-- Weather card template -->
+                    <div id="template" style="display: none;">
+                        <div class="col-xs-12 col-lg-4">
+                        <div class="weatherCard" style="background-image: url('@@imageURL@@');">
                             <!-- Button to remove the card -->
                             <button type="buttom" id="remove">X</button>
                             <!-- location-->
-                            <h1>Glasgow</h1> 
+                            <h1 id="changeColor">@@city@@</h1> 
                             <!-- Current Temp -->
-                            <h1>60&#8457</h1> <!-- &#8457 makes a degree symnbol -->
+                            <h1 id="changeColor">@@currentTemp@@&#8457</h1> <!-- &#8457 makes a degree symnbol -->
                             <!-- List of weather info -->
                             <ul class="list-group list-group-flush">
-                                 <li class="list-group-item">Location: Glasgow</li>
-                                 <li class="list-group-item">Current Conditions: Overcast</li>
-                                 <li class="list-group-item">High Temp: 70&#8457</li>
-                                 <li class="list-group-item">Low Temp: 32&#8457</li>
-                                 <li class="list-group-item">Chance of Percipitation 33%</li>
+                                 <li class="list-group-item">Location: @@cityState@@</li>
+                                 <li class="list-group-item">Current Conditions: @@conditions@@</li>
+                                 <li class="list-group-item">High Temp: @@highTemp@@&#8457</li>
+                                 <li class="list-group-item">Low Temp: @@lowTemp@@&#8457</li>
+                                 <li class="list-group-item">Chance of Precipitation: @@precip@@%</li>
                              </ul>
+                             <button type="button" class="btn btn-secondary btn-lg btn-block" data-toggle="collapse" data-target="#forecast">Hide/Show Weekly Forecast</button>
+                             <div id="forecast" class="collapse">
+                                 <ul class="list-group list-group-flush">
+                                     <li class="list-group-item">Today || High: @@max0@@&#8457 <br /> Low: @@low0@@&#8457 <br /> Precip. Chance: @@precip0@@%</li>
+                                     <li class="list-group-item">@@date1@@ || High: @@max1@@&#8457 <br /> Low: @@low1@@&#8457 <br /> Precip. Chance: @@precip1@@%</li>
+                                     <li class="list-group-item">@@date2@@ || High: @@max2@@&#8457 <br /> Low: @@low2@@&#8457 <br /> Precip. Chance: @@precip2@@%</li>
+                                     <li class="list-group-item">@@date3@@ || High: @@max3@@&#8457 <br /> Low: @@low3@@&#8457 <br /> Precip. Chance: @@precip3@@%</li>
+                                     <li class="list-group-item">@@date4@@ || High: @@max4@@&#8457 <br /> Low: @@low4@@&#8457 <br /> Precip. Chance: @@precip4@@%</li>
+                                     
+                                 </ul>
+                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            
         <!-- Link jQuery, Popper.js, and the Bootstrap JS -->
         
     <script
